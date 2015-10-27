@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eafit.dis.cgonza47.ananum20152" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubjectActivity"
+            android:label="@string/title_activity_subject_" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.MethodActivity"
+            android:label="@string/title_activity_method" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.BusquedasIncrementalesActivity"
+            android:label="@string/title_activity_busquedas_incrementales_" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.BisectionActivity"
+            android:label="@string/title_activity_bisection" />
+        <activity
+            android:name=".utilidades.GraficadorActivity"
+            android:label="@string/title_activity_graficador" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.ReglaFalsaActivity"
+            android:label="@string/title_activity_regla_falsa" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.PuntoFijoActivity"
+            android:label="@string/title_activity_punto_fijo" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.NewtonActivity"
+            android:label="@string/title_activity_newton" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.SecanteActivity"
+            android:label="@string/title_activity_secante" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.RaicesMultiplesActivity"
+            android:label="@string/title_activity_raices_multiples" />
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablaBisectionActivity"
+            android:label="@string/title_activity_tabla" >
+        </activity>
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablaSecanteActivity"
+            android:label="@string/title_activity_tabla_secante" >
+        </activity>
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablaReglaFalsaActivity"
+            android:label="@string/title_activity_tabla_regla_falsa" >
+        </activity>
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablaPuntoFijoActivity"
+            android:label="@string/title_activity_tabla_punto_fijo" >
+        </activity>
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablaNewtonActivity"
+            android:label="@string/title_activity_tabla_newton" >
+        </activity>
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablaRaicesMultiplesActivity"
+            android:label="@string/title_activity_tabla_raices_multiples" >
+        </activity>
+        <activity
+            android:name=".Ecuaciones_de_una_variable.TablasBIActivity"
+            android:label="@string/title_activity_tablas_bi" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.EliminacionGaussianaActivity"
+            android:label="@string/title_activity_eliminacion_gaussiana" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.MethodSistemaDeEcuacionesActivity"
+            android:label="@string/title_activity_method_sistema_de_ecuaciones" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.SelecSisEcuActivity"
+            android:label="@string/title_activity_selec_sis_ecu" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.DolittleActivity"
+            android:label="@string/title_activity_dolittle" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.CroutActivity"
+            android:label="@string/title_activity_crout" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.CholeskyActivity"
+            android:label="@string/title_activity_cholesky" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.MetodosIterativosActivity"
+            android:label="@string/title_activity_metodos_iterativos" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.JacobiActivity"
+            android:label="@string/title_activity_jacobi" >
+        </activity>
+        <activity
+            android:name=".Sistema_de_Ecuaciones.GaussSeidelActivity"
+            android:label="@string/title_activity_gauss_seidel" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.DatosInterpolacionActivity"
+            android:label="@string/title_activity_datos_interpolacion" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.SelecInterActivity"
+            android:label="@string/title_activity_selec_inter" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.NewtonInterpolacionActivity"
+            android:label="@string/title_activity_newton_interpolacion" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.LagrangeInterpolacionActivity"
+            android:label="@string/title_activity_lagrange_interpolacion" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.NevilleInterpolacionActivity"
+            android:label="@string/title_activity_neville_interpolacion" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.SplineLinealActivity"
+            android:label="@string/title_activity_spline_lineal" >
+        </activity>
+        <activity
+            android:name=".Interpolacion.SplineCubicoActivity"
+            android:label="@string/title_activity_spline_cubico" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="eafit.analisisnumerico.mathapp.Ecuaciones_de_una_variable.MethodActivity">
+
+    <Button
+
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Busquedas incrementales"
+        android:id="@+id/bt_busquedas_incrementales"
+        android:textSize="20dp"
+        android:capitalize="none"
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_below="@+id/funcion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Bisección"
+        android:id="@+id/bt_bisection"
+        android:textSize="20dp"
+        android:capitalize="none"
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_below="@+id/bt_busquedas_incrementales"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Regla falsa"
+        android:id="@+id/bt_reglafalsa"
+        android:textSize="20dp"
+        android:capitalize="none"
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_below="@+id/bt_bisection"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Punto fijo"
+        android:id="@+id/bt_puntofijo"
+        android:textSize="20dp"
+        android:capitalize="none"
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_below="@+id/bt_reglafalsa"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Métodos"
+        android:id="@+id/view_metodos"
+        android:textColor="@color/Azul"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/funcion"
+        android:autoText="false"
+        android:editable="true"
+        android:gravity="center"
+        android:hint="función"
+        android:layout_below="@+id/view_metodos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Newton"
+        android:id="@+id/bt_newton"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_below="@+id/bt_puntofijo"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Secante"
+        android:id="@+id/bt_secante"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_below="@+id/bt_newton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Raices Multiples"
+        android:id="@+id/bt_raimul"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_below="@+id/bt_secante"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ?"
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:id="@+id/cap1_ayuda"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/view_metodos"
+        android:layout_toEndOf="@+id/view_metodos"
+        android:layout_alignBottom="@+id/view_metodos" />
+
+</RelativeLayout>

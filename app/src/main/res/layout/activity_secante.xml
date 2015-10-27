@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="eafit.analisisnumerico.mathapp.Ecuaciones_de_una_variable.SecanteActivity">
+
+    <Button
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ?"
+        android:id="@+id/ayuda_sec"
+        android:textSize="20dp"
+        android:capitalize="none"
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/x0_sec"
+        android:layout_below="@+id/ayuda_sec"
+        android:layout_marginTop="20dp"
+        android:editable="true"
+        android:hint="x0"
+        android:layout_toLeftOf="@+id/calcular_sec"
+        android:layout_toStartOf="@+id/calcular_sec"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tolerancia_sec"
+        android:editable="true"
+        android:hint="Tolerancia"
+        android:layout_below="@+id/iter_sec"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iter_sec"
+        android:editable="true"
+        android:hint="Iteraciones"
+        android:layout_below="@+id/x1_sec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/calcular_sec"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_below="@+id/tolerancia_sec"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Graficar"
+        android:id="@+id/graficar_sec"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_below="@+id/tolerancia_sec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/resultado_sec"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/calcular_sec" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver"
+        android:id="@+id/volver_sec"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/ayuda_sec"
+        android:layout_toStartOf="@+id/ayuda_sec" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/x0_sec"
+        android:layout_alignLeft="@+id/calcular_sec"
+        android:layout_alignStart="@+id/calcular_sec"
+        android:layout_above="@+id/tolerancia_sec"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Error Absoluto"
+            android:id="@+id/ErrAbs_sec"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Error Relativo"
+            android:id="@+id/ErrRel_sec"
+            android:checked="false" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/x1_sec"
+        android:editable="true"
+        android:hint="X1"
+        android:layout_below="@+id/x0_sec"
+        android:layout_alignRight="@+id/x0_sec"
+        android:layout_alignEnd="@+id/x0_sec"
+        android:inputType="number|numberSigned|numberDecimal" />
+
+</RelativeLayout>
