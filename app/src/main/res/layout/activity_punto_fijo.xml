@@ -74,7 +74,7 @@
         android:id="@+id/calcular_pf"
         android:textSize="20dp"
         android:capitalize="none"
-        android:layout_centerVertical="true"
+        android:layout_above="@+id/resultado_pf"
         android:layout_alignRight="@+id/resultado_pf"
         android:layout_alignEnd="@+id/resultado_pf" />
 
@@ -88,16 +88,17 @@
         android:capitalize="none"
         android:layout_below="@+id/funciong_pf"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/resultado_pf"
-        android:layout_below="@+id/calcular_pf"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/graficar_pf" />
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
@@ -137,5 +138,14 @@
             android:id="@+id/ErrRel_pf"
             android:checked="false" />
     </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deltaPF"
+        android:editable="true"
+        android:hint="Delta"
+        android:layout_above="@+id/calcular_pf"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

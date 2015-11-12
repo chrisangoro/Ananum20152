@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MathApp</string>
+    <string name="app_name">Ananum20152</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings"></string>
     <string name="title_activity_subject_">Temas</string>
@@ -39,8 +39,4 @@
     <string name="title_activity_spline_cubico">Spline Cubico</string>
     <string name="title_activity_selec_integra">Diferenciacion e Integracion numerica</string>
     <string name="title_activity_datos__di_in">"Datos "</string>
-    <string name="title_activity_trap_gen">Trapecio Generalizado</string>
-    <string name="title_activity_simpson13">Simpson 1/3 Generalizado</string>
-    <string name="title_activity_simpson38">Simpson 3/8 Generalizado</string>
-    <string name="title_activity_pivoteo_escalonado">Pivoteo Escalonado</string>
 </resources>

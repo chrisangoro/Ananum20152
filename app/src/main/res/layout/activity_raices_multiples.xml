@@ -40,10 +40,10 @@
         android:id="@+id/tolerancia_raimul"
         android:editable="true"
         android:hint="Tolerancia"
+        android:inputType="number|numberSigned|numberDecimal"
         android:layout_below="@+id/iter_raimul"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:inputType="number|numberSigned|numberDecimal" />
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -74,7 +74,7 @@
         android:id="@+id/calcular_raimul"
         android:textSize="20dp"
         android:capitalize="none"
-        android:layout_below="@+id/derivadaseg_raimul"
+        android:layout_alignTop="@+id/graficar_raimul"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -88,7 +88,8 @@
         android:capitalize="none"
         android:layout_below="@+id/derivadaseg_raimul"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -149,5 +150,15 @@
         android:layout_below="@+id/derivada_raimul"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delta_raimul"
+        android:editable="true"
+        android:hint="Delta"
+        android:layout_below="@+id/derivadaseg_raimul"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

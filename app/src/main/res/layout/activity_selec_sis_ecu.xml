@@ -20,35 +20,7 @@
         android:layout_below="@+id/view_metodos"
         android:layout_marginTop="25dp"
         android:capitalize="none"
-        android:text="Eliminacion Gaussiana simple"
-        android:textSize="20dp" />
-
-    <Button
-
-
-        android:id="@+id/bt_egpp"
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/bt_elimgaussimple"
-        android:capitalize="none"
-        android:text="EG Pivoteo Parcial"
-        android:textSize="20dp" />
-
-    <Button
-
-
-        android:id="@+id/bt_egpt"
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/bt_egpp"
-        android:capitalize="none"
-        android:text="EG Pivoteo Total"
+        android:text="Eliminacion Gaussiana"
         android:textSize="20dp" />
 
     <Button
@@ -61,9 +33,9 @@
         android:capitalize="none"
         android:text="Dolittle"
         android:textSize="20dp"
-        android:layout_below="@+id/bt_egspe"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bt_elimgaussimple" />
 
     <TextView
         android:id="@+id/view_metodos"
@@ -111,17 +83,5 @@
         android:capitalize="none"
         android:text="Cholesky"
         android:textSize="20dp" />
-
-    <Button
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:id="@+id/bt_egspe"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:capitalize="none"
-        android:text="EG Pivoteo Escalonado"
-        android:textSize="20dp"
-        android:layout_below="@+id/bt_egpt"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

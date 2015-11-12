@@ -15,9 +15,7 @@ public class SelecInterActivity extends ActionBarActivity implements View.OnClic
 
     private Button bt_newtoninter;
     private Button lagrange_bt;
-    private Button neville_bt;
     private Button spline1_bt;
-    private Button spline2_bt;
     private Button spline3_bt;
     private Datos_inter di;
 
@@ -28,16 +26,12 @@ public class SelecInterActivity extends ActionBarActivity implements View.OnClic
 
         bt_newtoninter = (Button) findViewById(R.id.bt_newtoninter);
         lagrange_bt = (Button) findViewById(R.id.lagrange_bt);
-        neville_bt = (Button) findViewById(R.id.neville_bt);
         spline1_bt = (Button) findViewById(R.id.splin1_bt);
-        spline2_bt = (Button) findViewById(R.id.splin2_bt);
         spline3_bt = (Button) findViewById(R.id.splin3_bt);
 
         bt_newtoninter.setOnClickListener(this);
         lagrange_bt.setOnClickListener(this);
-        neville_bt.setOnClickListener(this);
         spline1_bt.setOnClickListener(this);
-        spline2_bt.setOnClickListener(this);
         spline3_bt.setOnClickListener(this);
 
         Intent intent = getIntent();
@@ -85,23 +79,12 @@ public class SelecInterActivity extends ActionBarActivity implements View.OnClic
             i.putExtra("Datos_inter", di);
             startActivity(i);
 
-        } else if (v.getId() == R.id.neville_bt) {
-
-            Intent i = new Intent(this, NevilleInterpolacionActivity.class);
-            i.putExtra("Datos_inter", di);
-            startActivity(i);
-
         }else if (v.getId() == R.id.splin1_bt) {
 
             Intent i = new Intent(this, SplineLinealActivity.class);
             i.putExtra("Datos_inter", di);
             startActivity(i);
 
-        }else if (v.getId() == R.id.splin2_bt) {
-
-            Intent i = new Intent(this, NevilleInterpolacionActivity.class);
-            i.putExtra("Datos_inter", di);
-            startActivity(i);
 
         }else if (v.getId() == R.id.splin3_bt) {
 

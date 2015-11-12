@@ -30,22 +30,16 @@ public class SelecSisEcuActivity extends ActionBarActivity implements View.OnCli
         setContentView(R.layout.activity_selec_sis_ecu);
 
         eliminacion_gaussiana_simple = (Button) findViewById(R.id.bt_elimgaussimple);
-        bt_egpt = (Button) findViewById(R.id.bt_egpt);
-        bt_egpp = (Button) findViewById(R.id.bt_egpp);
-        bt_egpe = (Button) findViewById(R.id.bt_egspe);
         bt_dolittle = (Button) findViewById(R.id.bt_dolittle);
         bt_crout = (Button) findViewById(R.id.bt_crout);
         bt_cholesky = (Button) findViewById(R.id.bt_cholesky);
         bt_iterativos = (Button) findViewById(R.id.bt_iterativos);
 
         eliminacion_gaussiana_simple.setOnClickListener(this);
-        bt_egpp.setOnClickListener(this);
-        bt_egpt.setOnClickListener(this);
         bt_dolittle.setOnClickListener(this);
         bt_crout.setOnClickListener(this);
         bt_cholesky.setOnClickListener(this);
         bt_iterativos.setOnClickListener(this);
-        bt_egpe.setOnClickListener(this);
 
         Intent intent = getIntent();
 

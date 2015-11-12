@@ -109,13 +109,14 @@ public class MethodSistemaDeEcuacionesActivity extends ActionBarActivity impleme
                         punt = i + 1;
 
                         while (tokens.hasMoreTokens()) {
-                            lista_fila.add(Double.parseDouble(tokens.nextToken()));
+                            String temp = tokens.nextToken();
+                            lista_fila.add(Double.valueOf(temp));
                         }
 
                         if (lista_fila.size() != (Integer.parseInt(tam_et.getText().toString()) + 1)) {
 
                             lista_fila.clear();
-                            matriz_et.setText("Copie la matriz bien");
+                            //matriz_et.setText("Copie la matriz bien");
 
                             break;
                         }

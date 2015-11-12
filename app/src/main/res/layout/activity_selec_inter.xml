@@ -33,7 +33,7 @@
         android:layout_marginTop="41dp"
         android:capitalize="none"
         android:gravity="center"
-        android:text="Newton diferencias dividas"
+        android:text="Newton"
         android:textSize="25dp" />
 
     <Button
@@ -50,19 +50,6 @@
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:id="@+id/neville_bt"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:capitalize="none"
-        android:gravity="center"
-        android:text="Neville"
-        android:textSize="25dp"
-        android:layout_below="@+id/lagrange_bt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-
-    <Button
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
         android:id="@+id/splin1_bt"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -70,22 +57,9 @@
         android:gravity="center"
         android:text="Spline Lineal"
         android:textSize="25dp"
-        android:layout_below="@+id/neville_bt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-
-    <Button
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:id="@+id/splin2_bt"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:capitalize="none"
-        android:gravity="center"
-        android:text="Spline Cuadratico"
-        android:textSize="25dp"
-        android:layout_below="@+id/splin1_bt"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lagrange_bt" />
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
@@ -96,8 +70,8 @@
         android:gravity="center"
         android:text="Spline Cubico"
         android:textSize="25dp"
-        android:layout_below="@+id/splin2_bt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/splin1_bt" />
 
 </RelativeLayout>

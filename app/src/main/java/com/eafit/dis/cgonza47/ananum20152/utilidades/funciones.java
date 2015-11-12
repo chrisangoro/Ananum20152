@@ -28,7 +28,6 @@ public class funciones implements Serializable{
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
     public void setFunction(String function) throws Exception {

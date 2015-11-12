@@ -24,9 +24,6 @@
             android:name=".Ecuaciones_de_una_variable.MethodActivity"
             android:label="@string/title_activity_method" />
         <activity
-            android:name=".Ecuaciones_de_una_variable.BusquedasIncrementalesActivity"
-            android:label="@string/title_activity_busquedas_incrementales_" />
-        <activity
             android:name=".Ecuaciones_de_una_variable.BisectionActivity"
             android:label="@string/title_activity_bisection" />
         <activity
@@ -126,10 +123,6 @@
         <activity
             android:name=".Interpolacion.LagrangeInterpolacionActivity"
             android:label="@string/title_activity_lagrange_interpolacion" >
-        </activity>
-        <activity
-            android:name=".Interpolacion.NevilleInterpolacionActivity"
-            android:label="@string/title_activity_neville_interpolacion" >
         </activity>
         <activity
             android:name=".Interpolacion.SplineLinealActivity"

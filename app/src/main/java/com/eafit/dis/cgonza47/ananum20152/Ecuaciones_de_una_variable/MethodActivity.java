@@ -23,7 +23,6 @@ public class MethodActivity extends ActionBarActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_method);
 
-        Button bt_busquedas_incrementales = (Button) findViewById(R.id.bt_busquedas_incrementales);
         Button bt_bisection = (Button) findViewById(R.id.bt_bisection);
         Button bt_reglafalsa = (Button) findViewById(R.id.bt_reglafalsa);
         Button bt_puntofijo = (Button) findViewById(R.id.bt_puntofijo);
@@ -44,7 +43,6 @@ public class MethodActivity extends ActionBarActivity implements View.OnClickLis
             }
         }
 
-        bt_busquedas_incrementales.setOnClickListener(this);
         bt_bisection.setOnClickListener(this);
         bt_reglafalsa.setOnClickListener(this);
         bt_puntofijo.setOnClickListener(this);
@@ -82,13 +80,7 @@ public class MethodActivity extends ActionBarActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
-        if (v.getId() == R.id.bt_busquedas_incrementales) {
-
-            Intent i = new Intent(this, BusquedasIncrementalesActivity.class);
-            i.putExtra("funcion", funcion.getText().toString());
-            startActivity(i);
-
-        } else if (v.getId() == R.id.bt_bisection) {
+        if (v.getId() == R.id.bt_bisection) {
 
             Intent i = new Intent(this, BisectionActivity.class);
             i.putExtra("funcion", funcion.getText().toString());

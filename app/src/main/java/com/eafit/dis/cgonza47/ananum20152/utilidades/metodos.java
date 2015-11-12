@@ -451,64 +451,6 @@ public class metodos implements Serializable {
 
     /*METODOS DE ECUACIONES DE UNA VARIABLE*/
 
-    public String busquedas_incrementales(double x0, double delta, int iter) {
-
-        double y0;
-
-        y0 = funcion_norm(x0, this.funcion);
-
-        if (y0 == 0) {
-
-            return (x0 + " es una raiz");
-
-        } else {
-            if (delta == 0) {
-
-                return ("Ingrese un " + delta + "adecuado");
-
-            } else {
-                if (iter <= 0) {
-
-                    return ("Ingrese un numero de iteraciones adecuado");
-
-                } else {
-
-                    x_bi.add(x0);
-                    result_bi.add(y0);
-                    iter_bi.add(0);
-
-                    double x1 = x0 + delta;
-                    double y1 = funcion_norm(x1, this.funcion);
-                    int contador = 1;
-
-                    while (y0 * y1 > 0 && contador < iter) {
-
-                        x0 = x1;
-                        y0 = y1;
-                        x1 = x0 + delta;
-                        y1 = funcion_norm(x1, this.funcion);
-                        iter_bi.add(contador);
-                        contador = contador + 1;
-                        x_bi.add(x0);
-                        result_bi.add(y0);
-                    }
-                    iter_bi.add(contador);
-                    x_bi.add(x1);
-                    result_bi.add(y1);
-                    if (y1 == 0) {
-                        return (x1 + " es una raíz");
-                    } else {
-                        if (y0 * y1 < 0) {
-                            return ("(" + x0 + " - " + x1 + ") es un intervalo");
-                        } else {
-                            return ("El algoritmo fracaso en estas interaciones: " + iter);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     public String biseccion(double x0, double x1, double tolerancia, int iter, boolean ti_err) {
 
         iter_bisec.clear();

@@ -297,12 +297,10 @@ public class Metodos_Interpolacion {
 
         } else {
 
-            System.out.println("Faltan datos");
+            System.out.println("No hay datos suficientes");
 
         }
     }
-
-    /*Spline Cuadratico*/
 
     /*Spline Cubico*/
 

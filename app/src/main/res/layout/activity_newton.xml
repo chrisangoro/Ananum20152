@@ -74,21 +74,10 @@
         android:id="@+id/calcular_new"
         android:textSize="20dp"
         android:capitalize="none"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="Graficar"
-        android:id="@+id/graficar_new"
-        android:textSize="20dp"
-        android:capitalize="none"
         android:layout_below="@+id/derivada_new"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignRight="@+id/resultado_new"
+        android:layout_alignEnd="@+id/resultado_new"
+        android:layout_marginTop="54dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -139,5 +128,27 @@
             android:id="@+id/ErrRel_new"
             android:checked="false" />
     </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deltaNewton"
+        android:editable="true"
+        android:hint="Delta"
+        android:layout_below="@+id/derivada_new"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Graficar"
+        android:id="@+id/graficar_new"
+        android:textSize="20dp"
+        android:capitalize="none"
+        android:layout_above="@+id/resultado_new"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

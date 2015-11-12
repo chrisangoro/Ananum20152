@@ -13,28 +13,14 @@
 
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Busquedas incrementales"
-        android:id="@+id/bt_busquedas_incrementales"
-        android:textSize="20dp"
-        android:capitalize="none"
-        style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:layout_below="@+id/funcion"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-
-
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:text="Bisección"
         android:id="@+id/bt_bisection"
         android:textSize="20dp"
         android:capitalize="none"
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
-        android:layout_below="@+id/bt_busquedas_incrementales"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/funcion" />
 
     <Button
 

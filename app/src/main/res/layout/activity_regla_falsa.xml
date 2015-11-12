@@ -80,8 +80,9 @@
         android:textSize="20dp"
         android:capitalize="none"
         android:layout_below="@+id/iter_rg"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/resultado_rg"
+        android:layout_alignEnd="@+id/resultado_rg"
+        android:layout_marginTop="50dp" />
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
@@ -91,7 +92,7 @@
         android:id="@+id/graficar_rg"
         android:textSize="20dp"
         android:capitalize="none"
-        android:layout_below="@+id/iter_rg"
+        android:layout_alignTop="@+id/calcular_rg"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -100,13 +101,13 @@
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/resultado_rg"
-        android:layout_below="@+id/calcular_rg"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:nestedScrollingEnabled="false"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:layout_below="@+id/graficar_rg" />
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
@@ -145,5 +146,15 @@
             android:text="Error Relativo"
             android:id="@+id/ErrRel_rg" />
     </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delta_rg"
+        android:editable="true"
+        android:hint="Delta"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:layout_below="@+id/iter_rg"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -25,6 +25,7 @@ public class BisectionActivity extends ActionBarActivity implements View.OnClick
     private EditText x1_bisec;
     private EditText tolerancia_bisec;
     private EditText iter;
+    private EditText delta;
     private TextView resultado;
     private metodos metodo;
     private boolean type_tol = false;
@@ -44,6 +45,7 @@ public class BisectionActivity extends ActionBarActivity implements View.OnClick
         x1_bisec = (EditText) findViewById(R.id.x1_bisec);
         tolerancia_bisec = (EditText) findViewById(R.id.tolerancia_bisec);
         iter = (EditText) findViewById(R.id.iter_bisec);
+        delta = (EditText) findViewById(R.id.deltaBis);
         resultado = (TextView) findViewById(R.id.resultado_bisec);
 
         resultado.setMaxLines(30);
@@ -56,7 +58,7 @@ public class BisectionActivity extends ActionBarActivity implements View.OnClick
         Button bt_volver_bisec = (Button) findViewById(R.id.volver_bisec);
         Button bt_ayuda_bisec = (Button) findViewById(R.id.ayuda_bisec);
         Button bt_calcular_bisec = (Button) findViewById(R.id.calcular_bisec);
-        Button bt_graficar_bisec = (Button) findViewById(R.id.graficar_bisec);
+        //Button bt_graficar_bisec = (Button) findViewById(R.id.graficar_bisec);
 
         RadioButton rb_ErrAbs = (RadioButton) findViewById(R.id.ErrAbs_bisec);
         RadioButton rb_ErrRel = (RadioButton) findViewById(R.id.ErrRel_bisec);
@@ -69,7 +71,7 @@ public class BisectionActivity extends ActionBarActivity implements View.OnClick
         bt_volver_bisec.setOnClickListener(this);
         bt_ayuda_bisec.setOnClickListener(this);
         bt_calcular_bisec.setOnClickListener(this);
-        bt_graficar_bisec.setOnClickListener(this);
+        //bt_graficar_bisec.setOnClickListener(this);
 
     }
 
@@ -103,11 +105,11 @@ public class BisectionActivity extends ActionBarActivity implements View.OnClick
 
             ALG_bisection();
 
-        } else if (v.getId() == R.id.graficar_bisec) {
+        /*} else if (v.getId() == R.id.graficar_bisec) {
 
             Intent i = new Intent(this, GraficadorActivity.class);
             i.putExtra("funcion", funcion);
-            startActivity(i);
+            startActivity(i);*/
 
         } else if (v.getId() == R.id.ayuda_bisec) {
 

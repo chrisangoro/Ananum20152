@@ -28,7 +28,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void clickEntrar(View v) {
 
-        Toast.makeText(getBaseContext(), "Bienvenido a MathApp ;)!!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getBaseContext(), "Bienvenido!", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(getApplicationContext(), SubjectActivity.class));
 
     }

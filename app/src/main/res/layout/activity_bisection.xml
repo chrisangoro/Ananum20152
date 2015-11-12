@@ -80,9 +80,9 @@
         android:id="@+id/calcular_bisec"
         android:textSize="20dp"
         android:capitalize="none"
-        android:layout_below="@+id/iter_bisec"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/graficar_bisec"
+        android:layout_alignRight="@+id/resultado_bisec"
+        android:layout_alignEnd="@+id/resultado_bisec" />
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
@@ -94,20 +94,21 @@
         android:capitalize="none"
         android:layout_below="@+id/iter_bisec"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/resultado_bisec"
-        android:layout_below="@+id/calcular_bisec"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:nestedScrollingEnabled="false"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:layout_below="@+id/calcular_bisec" />
 
     <Button
         style="@style/Base.Widget.AppCompat.Toolbar.Button.Navigation"
@@ -157,5 +158,16 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
     </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deltaBis"
+        android:editable="true"
+        android:hint="Delta"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:layout_below="@+id/iter_bisec"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
